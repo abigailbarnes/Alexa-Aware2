@@ -1,0 +1,92 @@
+[
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646156876089.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 1
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646156891576.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 2
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646156891598.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 3
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646156975112.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 4
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646156975123.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 5
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646156984706.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 6
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646156984689.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 7
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646157014759.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 8
+    },
+    {
+        "ZDEVICE_ID": "8320250e-866c-4fad-9262-ee812e4c8e3e",
+        "ZNETWORK_STATE": 1,
+        "ZNETWORK_SUBTYPE": "WIFI",
+        "ZNETWORK_TYPE": 1,
+        "ZTIMESTAMP": 1646157014782.0,
+        "Z_ENT": 57,
+        "Z_OPT": 1,
+        "Z_PK": 9
+    }
+]

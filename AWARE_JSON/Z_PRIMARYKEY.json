@@ -1,0 +1,410 @@
+[
+    {
+        "Z_ENT": 1,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityAccelerometer",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 2,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityActivityRecognition",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 3,
+        "Z_MAX": 655,
+        "Z_NAME": "EntityAmbientNoise",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 4,
+        "Z_MAX": 33,
+        "Z_NAME": "EntityAWAREStatus",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 5,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityBarometer",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 6,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityBattery",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 7,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityBatteryCharge",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 8,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityBatteryDischarge",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 9,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityBCCalendar",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 10,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityBLEHeartRate",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 11,
+        "Z_MAX": 61,
+        "Z_NAME": "EntityBluetooth",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 12,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityCalendar",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 13,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityCall",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 14,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityContact",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 15,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityConversation",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 16,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityDebug",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 17,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityDeviceUsage",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 18,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityESMAnswer",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 19,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityESMAnswerBC",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 20,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityESMAnswerHistory",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 21,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityESMHistory",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 22,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityESMSchedule",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 23,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityESM",
+        "Z_SUPER": 22
+    },
+    {
+        "Z_ENT": 24,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityEstimoteAirpressure",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 25,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityEstimoteAmbientLight",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 26,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityEstimoteMotion",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 27,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityEstimoteTemperature",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 28,
+        "Z_MAX": 2570,
+        "Z_NAME": "EntityEventLog",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 29,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityFitbitData",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 30,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityFitbitDevice",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 31,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityGravity",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 32,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityGyroscope",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 33,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityHealthKitCategory",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 34,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityHealthKitCategorySleep",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 35,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityHealthKitQuantity",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 36,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityHealthKitQuantityHR",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 37,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityHealthKitWorkout",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 38,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityIBeacon",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 39,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityIOSActivityRecognition",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 40,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityIOSPedometer",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 41,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityLabel",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 42,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityLinearAccelerometer",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 43,
+        "Z_MAX": 8,
+        "Z_NAME": "EntityLocation",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 44,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityLocationVisit",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 45,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMagnetometer",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 46,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMemory",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 47,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandBatteryGauge",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 48,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandCalorie",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 49,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandDeviceContact",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 50,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandDistance",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 51,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandGSR",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 52,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandHR",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 53,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandPedometer",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 54,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandRRInterval",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 55,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandSkinTemp",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 56,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityMSBandUV",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 57,
+        "Z_MAX": 9,
+        "Z_NAME": "EntityNetwork",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 58,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityNTPTime",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 59,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityOpenWeather",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 60,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityProcessor",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 61,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityProximity",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 62,
+        "Z_MAX": 1,
+        "Z_NAME": "EntityPushNotification",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 63,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityRotation",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 64,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityScreen",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 65,
+        "Z_MAX": 0,
+        "Z_NAME": "EntitySensorWifi",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 66,
+        "Z_MAX": 0,
+        "Z_NAME": "EntitySignificantMotion",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 67,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityTimezone",
+        "Z_SUPER": 0
+    },
+    {
+        "Z_ENT": 68,
+        "Z_MAX": 0,
+        "Z_NAME": "EntityWifi",
+        "Z_SUPER": 0
+    }
+]

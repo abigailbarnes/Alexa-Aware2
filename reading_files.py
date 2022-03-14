@@ -62,6 +62,8 @@ def bluetooth():
     for object in bluetooth_usage:
         rssi.append(object['ZBT_RSSI'])
         timestamp.append(datetime.datetime.fromtimestamp(object['ZTIMESTAMP']/1000.0))
+        #rssi.append(object['bt_rssi'])
+        #timestamp.append(datetime.datetime.fromtimestamp(object['timestamp']/1000.0))
 
 
     #plotting time vs. rssi
@@ -123,14 +125,44 @@ def location():
     plt.savefig('/Users/christopherbarnes/cmsc23400/Alexa-Aware2/Data_Plots/LocationLongitude.png')
     plt.clf()
 
+def emf_abby1():
+    #Abby's EMF reading averages (3 readings taken each time) 
+    #from a 7 story apartment building, 4 apartments on each floor on S Dorchester
+    emf = [33, 48, 610, 857, 786, 887, 999, 1084, 1064, 1064, 1030, 1062, 819]
+    command = ["No Devices On", "TV and Computer Streaming Netflix and Spotify in Room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking Around Alexa, No Commands","Hey Alexa","Hey Alexa, Tell Me the Weather","Hey Alexa, Tell Me the Weather Tomorrow","Hey Alexa, Call Dad","Hey Alexa, Tell Me the Amazon Deals","Hey Alexa, Play Music", "Device Unplugged"]
+
+    #plotting environment vs. emf
+    plt.plot(command, emf)
+    plt.title('Wifi Reading 1: Environment vs. EMF')
+    plt.xlabel('Command')
+    plt.ylabel('EMF (μT)')
+    plt.savefig('/Users/christopherbarnes/cmsc23400/Alexa-Aware2/Data_Plots/WifiReadingAbby1.png')
+    plt.clf()
+
+def emf_christina1():
+    #Christina's EMF
+    emf = [31, 293, 687, 775, 715, 750, 775, 1026, 1020, 843, 1026, 1022, 975]
+    command = ["No Devices On", "TV and Computer Streaming Netflix and Spotify in Room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking Around Alexa, No Commands","Hey Alexa","Hey Alexa, Tell Me the Weather","Hey Alexa, Tell Me the Weather Tomorrow","Hey Alexa, Call Dad","Hey Alexa, Tell Me the Amazon Deals","Hey Alexa, Play Music", "Device Unplugged"]
+
+    #plotting environment vs. emf
+    plt.plot(command, emf)
+    plt.title('Wifi Reading 1: Environment vs. EMF')
+    plt.xlabel('Command')
+    plt.ylabel('EMF (μT)')
+    plt.savefig('/Users/christopherbarnes/cmsc23400/Alexa-Aware2/Data_Plots/WifiReadingChristina1.png')
+    plt.clf()
 
 
 def main():
     ambientnoise()
     bluetooth()
     location()
+    emf_abby1()
+    emf_christina1()
 
 if __name__ == "__main__":
     ambientnoise()
     bluetooth()
     location() 
+    emf_abby1()
+    emf_christina1()

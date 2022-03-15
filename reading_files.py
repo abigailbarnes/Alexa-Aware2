@@ -138,28 +138,83 @@ def emf_abby1(file_path):
     #Abby's EMF reading averages (3 readings taken each time) 
     #from a 7 story apartment building, 4 apartments on each floor on S Dorchester
     emf = [33, 48, 610, 857, 786, 887, 999, 1084, 1064, 1064, 1030, 1062, 819]
-    command = ["No Devices On", "TV and Computer Streaming Netflix and Spotify in Room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking Around Alexa, No Commands","Hey Alexa","Hey Alexa, Tell Me the Weather","Hey Alexa, Tell Me the Weather Tomorrow","Hey Alexa, Call Dad","Hey Alexa, Tell Me the Amazon Deals","Hey Alexa, Play Music", "Device Unplugged"]
+    command = ["No Devices On", "TV/Computer w/ Netflix & Spotify", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Call Dad","Amazon Deals","Play Music", "Device Unplugged"]
 
     #plotting environment vs. emf
-    plt.plot(command, emf)
-    plt.title('Wifi Reading 1: Environment vs. EMF')
-    plt.xlabel('Command')
-    plt.ylabel('EMF (μT)')
+    plt.plot(emf, command, 'o-')
+    plt.title('Reading 1: Environment vs. EMF')
+    plt.ylabel('Command')
+    plt.xlabel('EMF (μT)')
     fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAbby1.png")
     plt.savefig(fig_location)
     plt.clf()
 
-def emf_christina1(file_path):
-    #Christina's EMF
-    emf = [31, 293, 687, 775, 715, 750, 775, 1026, 1020, 843, 1026, 1022, 975]
-    command = ["No Devices On", "TV and Computer Streaming Netflix and Spotify in Room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking Around Alexa, No Commands","Hey Alexa","Hey Alexa, Tell Me the Weather","Hey Alexa, Tell Me the Weather Tomorrow","Hey Alexa, Call Dad","Hey Alexa, Tell Me the Amazon Deals","Hey Alexa, Play Music", "Device Unplugged"]
+def emf_abby2(file_path):
+    #Abby's EMF reading averages (3 readings taken each time) 
+    #MAAD Lab (6 TVs streaming various things, computers, computer lab on other side of facility, many networked devices)
+    emf = [115, 790, 879, 858, 882, 1103, 1242, 1265, 1192, 1154, 1176, 761]
+    command = ["TV/Computer in room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Call Dad","Amazon Deals","Play Music", "Device Unplugged"]
 
     #plotting environment vs. emf
-    plt.plot(command, emf)
-    plt.title('Wifi Reading 1: Environment vs. EMF')
+    plt.plot(emf, command, 'o-')
+    plt.title('Reading 2: Environment vs. EMF')
+    plt.ylabel('Command')
+    plt.xlabel('EMF (μT)')
+    plt.tight_layout()
+    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAbby2.png")
+    plt.savefig(fig_location)
+    plt.clf()
+
+
+def emf_christina1(file_path):
+    #Christina's EMF
+    #from a 3 story apartment building, 2 apartments on each floor on S Woodlawn
+    emf = [31, 687, 775, 715, 750, 775, 1026, 1020, 1026, 1022, 975]
+    command = ["No Devices On", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Amazon Deals","Play Music", "Device Unplugged"]
+
+    #plotting environment vs. emf
+    plt.plot(emf, command, 'o-')
+    plt.title('Reading 3: Environment vs. EMF')
+    plt.ylabel('Command')
+    plt.xlabel('EMF (μT)')
+    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingChristina1.png")
+    plt.savefig(fig_location)
+    plt.clf()
+
+def emf_christina2(file_path):
+    #Christina's EMF
+    #from a 3 story apartment building, 2 apartments on each floor on S Woodlawn
+    emf = [31, 772, 324, 726, 725, 725, 722, 722, 727, 724, 120]
+    command = ["No Devices On", "Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Call Dad", "Amazon Deals","Play Music", "Device Unplugged"]
+
+    #plotting environment vs. emf
+    plt.plot(emf, command, 'o-')
+    plt.title('Reading 4: Environment vs. EMF')
+    plt.ylabel('Command')
+    plt.xlabel('EMF (μT)')
+    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingChristina2.png")
+    plt.savefig(fig_location)
+    plt.clf()
+
+def all_emf(file_path):
+    #all the emf values in one plot
+
+    ab1_emf = [33, 857, 786, 887, 999, 1084, 1064, 1030, 1062, 819]
+    ab1_command = ["No Devices On", "Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Amazon Deals","Play Music", "Device Unplugged"]
+    ab2_emf = [0, 879, 858, 882, 1103, 1242, 1265, 1154, 1176, 761]
+    ch1_emf = [31, 687, 715, 750, 775, 1026, 1020, 1026, 1022, 975]
+    ch2_emf = [31, 772, 324, 726, 725, 725, 722, 727, 724, 120]
+
+    plt.plot(ab1_command, ab1_emf, 'ro-')
+    plt.plot(ab1_command, ab2_emf, 'bo-')
+    plt.plot(ab1_command, ch1_emf, 'go-')
+    plt.plot(ab1_command, ch2_emf, 'yo-')
+    plt.title('All Readings: Environment vs. EMF')
     plt.xlabel('Command')
     plt.ylabel('EMF (μT)')
-    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingChristina1.png")
+    plt.xticks(rotation = 65)
+    plt.tight_layout()
+    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAll.png")
     plt.savefig(fig_location)
     plt.clf()
 
@@ -170,7 +225,10 @@ def main():
     bluetooth(file_path)
     location(file_path)
     emf_abby1(file_path)
+    emf_abby2(file_path)
     emf_christina1(file_path)
+    emf_christina2(file_path)
+    all_emf(file_path)
 
 if __name__ == "__main__":
     main()

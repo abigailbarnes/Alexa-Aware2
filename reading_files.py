@@ -145,6 +145,7 @@ def emf_abby1(file_path):
     plt.title('Reading 1: Environment vs. EMF')
     plt.ylabel('Command')
     plt.xlabel('EMF (μT)')
+    plt.tight_layout()
     fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAbby1.png")
     plt.savefig(fig_location)
     plt.clf()
@@ -164,7 +165,6 @@ def emf_abby2(file_path):
     fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAbby2.png")
     plt.savefig(fig_location)
     plt.clf()
-
 
 def emf_christina1(file_path):
     #Christina's EMF
@@ -196,6 +196,38 @@ def emf_christina2(file_path):
     plt.savefig(fig_location)
     plt.clf()
 
+def emf_abby3(file_path):
+    #Abby's EMF reading averages (3 readings taken each time) 
+    #Building Lounge(Only networked devices are one printer and the wifi on the floor)
+    emf = [23, 79, 547, 798, 735, 752, 882, 914, 912, 942, 967, 960, 578]
+    command = ["No Devices On", "Computer/iPad in room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Call Dad","Amazon Deals","Play Music", "Device Unplugged"]
+
+    #plotting environment vs. emf
+    plt.plot(emf, command, 'o-')
+    plt.title('Reading 5: Environment vs. EMF')
+    plt.ylabel('Command')
+    plt.xlabel('EMF (μT)')
+    plt.tight_layout()
+    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAbby3.png")
+    plt.savefig(fig_location)
+    plt.clf()
+
+def emf_abby4(file_path):
+    #Abby's EMF reading averages (3 readings taken each time) 
+    #Apartment (Wifi, 9 other apartments on our floor, 26 story building)
+    emf = [62, 167, 468, 547, 892, 864, 1025, 1108, 1061, 1123, 1078, 1055, 588]
+    command = ["No Devices On", "Computers(2) and TV Streaming", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Call Dad","Amazon Deals","Play Music", "Device Unplugged"]
+
+    #plotting environment vs. emf
+    plt.plot(emf, command, 'o-')
+    plt.title('Reading 6: Environment vs. EMF')
+    plt.ylabel('Command')
+    plt.xlabel('EMF (μT)')
+    plt.tight_layout()
+    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAbby4.png")
+    plt.savefig(fig_location)
+    plt.clf()
+
 def all_emf(file_path):
     #all the emf values in one plot
 
@@ -204,15 +236,19 @@ def all_emf(file_path):
     ab2_emf = [0, 879, 858, 882, 1103, 1242, 1265, 1154, 1176, 761]
     ch1_emf = [31, 687, 715, 750, 775, 1026, 1020, 1026, 1022, 975]
     ch2_emf = [31, 772, 324, 726, 725, 725, 722, 727, 724, 120]
+    ab3_emf = [23, 798, 735, 752, 882, 914, 912, 967, 960, 578]
+    ab4_emf = [62, 547, 892, 864, 1025, 1108, 1061, 1078, 1055, 588]
 
-    plt.plot(ab1_command, ab1_emf, 'ro-')
-    plt.plot(ab1_command, ab2_emf, 'bo-')
-    plt.plot(ab1_command, ch1_emf, 'go-')
-    plt.plot(ab1_command, ch2_emf, 'yo-')
+    plt.plot(ab1_command, ab1_emf, 'ro-', label = 'Apartment1')
+    plt.plot(ab1_command, ab2_emf, 'bo-', label = 'MADD')
+    plt.plot(ab1_command, ch1_emf, 'go-', label = 'Apartment2')
+    plt.plot(ab1_command, ab3_emf, 'mo-', label = 'Building Lounge')
+    plt.plot(ab1_command, ab4_emf, 'co-', label = 'Apartment3')
     plt.title('All Readings: Environment vs. EMF')
     plt.xlabel('Command')
     plt.ylabel('EMF (μT)')
-    plt.xticks(rotation = 65)
+    plt.legend(loc='best', bbox_to_anchor=(1.1, 1.05))
+    plt.xticks(rotation = 90)
     plt.tight_layout()
     fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAll.png")
     plt.savefig(fig_location)
@@ -228,6 +264,8 @@ def main():
     emf_abby2(file_path)
     emf_christina1(file_path)
     emf_christina2(file_path)
+    emf_abby3(file_path)
+    emf_abby4(file_path)
     all_emf(file_path)
 
 if __name__ == "__main__":

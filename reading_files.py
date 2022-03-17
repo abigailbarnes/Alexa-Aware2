@@ -153,8 +153,8 @@ def emf_abby1(file_path):
 def emf_abby2(file_path):
     #Abby's EMF reading averages (3 readings taken each time) 
     #MAAD Lab (6 TVs streaming various things, computers, computer lab on other side of facility, many networked devices)
-    emf = [115, 790, 879, 858, 882, 1103, 1242, 1265, 1192, 1154, 1176, 761]
-    command = ["TV/Computer in room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Call Dad","Amazon Deals","Play Music", "Device Unplugged"]
+    emf = [57, 115, 790, 879, 858, 882, 1103, 1242, 1265, 1192, 1154, 1176, 761]
+    command = ["No Devices", "TV/Computer in room", "Setup Mode","Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Call Dad","Amazon Deals","Play Music", "Device Unplugged"]
 
     #plotting environment vs. emf
     plt.plot(emf, command, 'o-')
@@ -233,7 +233,7 @@ def all_emf(file_path):
 
     ab1_emf = [33, 857, 786, 887, 999, 1084, 1064, 1030, 1062, 819]
     ab1_command = ["No Devices On", "Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Amazon Deals","Play Music", "Device Unplugged"]
-    ab2_emf = [0, 879, 858, 882, 1103, 1242, 1265, 1154, 1176, 761]
+    ab2_emf = [57, 879, 858, 882, 1103, 1242, 1265, 1154, 1176, 761]
     ch1_emf = [31, 687, 715, 750, 775, 1026, 1020, 1026, 1022, 975]
     ch2_emf = [31, 772, 324, 726, 725, 725, 722, 727, 724, 120]
     ab3_emf = [23, 798, 735, 752, 882, 914, 912, 967, 960, 578]
@@ -254,6 +254,49 @@ def all_emf(file_path):
     plt.savefig(fig_location)
     plt.clf()
 
+def all_emf_sub_baseline(file_path):
+    #all the emf values in one plot
+    ab1_command = ["Resting Device Connected to Internet","Muted Device Plugged In", "Speaking, No Commands","Hey Alexa","Today's Weather","Tomorrow's Weather","Amazon Deals","Play Music", "Device Unplugged"]
+    ab1_emf = [824, 753, 854, 966, 1051, 1031, 997, 1029, 786]
+    ab2_emf = [822, 801, 825, 1046, 1185, 1207, 1097, 1119, 704]
+    ch1_emf = [656, 684, 719, 744, 995, 989, 986, 991, 944]
+    ab3_emf = [775, 712, 729, 859, 891, 889, 944, 937, 555]
+    ab4_emf = [485, 830, 802, 963, 984, 999, 1012, 993, 522]
+
+    plt.plot(ab1_command, ab1_emf, 'ro-', label = 'Apartment1')
+    plt.plot(ab1_command, ab2_emf, 'bo-', label = 'MADD')
+    plt.plot(ab1_command, ch1_emf, 'go-', label = 'Apartment2')
+    plt.plot(ab1_command, ab3_emf, 'mo-', label = 'Building Lounge')
+    plt.plot(ab1_command, ab4_emf, 'co-', label = 'Apartment3')
+    plt.title('All Readings: Environment vs. EMF')
+    plt.xlabel('Command')
+    plt.ylabel('EMF (μT)')
+    plt.legend(loc='best', bbox_to_anchor=(1.1, 1.05))
+    plt.xticks(rotation = 90)
+    plt.tight_layout()
+    fig_location = os.path.join(file_path, "Data_Plots/WifiReadingAllSubBaseline.png")
+    plt.savefig(fig_location)
+    plt.clf()
+
+def temporal(file_path):
+    #Christina's apartment EMF readings when 
+    time = [0,5,10,15,20,25,30]
+    emf_hey_alexa = [725,725,725,725,725,725, 725]
+    emf_weather = [722, 726, 724, 722, 728, 724, 722]
+    emf_music = [723, 723, 725, 724, 725, 724, 723]
+    
+    #plotting environment vs. emf
+    plt.plot(time, emf_hey_alexa, 'ro-', label = "Hey Alexa")
+    plt.plot(time, emf_weather, 'bo-', label = "Weather")
+    plt.plot(time, emf_music, 'go-', label = "Music")
+    plt.title('Temporal EMF Measurements over Time')
+    plt.xlabel('Time (s)')
+    plt.ylabel('EMF (μT)')
+    plt.legend(loc='best')
+    plt.tight_layout()
+    fig_location = os.path.join(file_path, "Data_Plots/EMFovertime.png")
+    plt.savefig(fig_location)
+    plt.clf()
 
 def main():
     file_path = os.getcwd()
@@ -267,6 +310,8 @@ def main():
     emf_abby3(file_path)
     emf_abby4(file_path)
     all_emf(file_path)
+    temporal(file_path)
+    all_emf_sub_baseline(file_path)
 
 if __name__ == "__main__":
     main()
